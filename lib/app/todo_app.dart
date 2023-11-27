@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tudu/screens/screens.dart';
+import 'package:tudu/config/config.dart';
+import 'package:tudu/screens/home_screen.dart';
 
 class TodoApp extends StatelessWidget {
   const TodoApp({super.key});
@@ -8,11 +9,7 @@ class TodoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'TuDu: Notas',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: AppTheme.light,
       home: const HomeScreen(),
     );
   }
